@@ -13,6 +13,9 @@ public class sumTotal {
         if (value > sumTotal(array)){
             return "Không có nghiệm";
         }
+        if (value < minArray(array)){
+            return "Không có nghiệm";
+        }
 
         int[] newArray = sortArray(array);
         for (int i = 0; i < newArray.length; i++) {
